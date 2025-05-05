@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.JFXSlider?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="1024.0" styleClass="lastpane" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicapp.UIController">
+    <children>
+        <Pane prefHeight="580.0" prefWidth="150.0" styleClass="sidebar">
+            <children>
+                <Circle fill="#ff6d53" layoutX="22.0" layoutY="22.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fill="#ffec26" layoutX="38.0" layoutY="22.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                <Circle fill="#2fea37" layoutX="55.0" layoutY="22.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                <HBox id="PLAYLIST" alignment="CENTER_LEFT" layoutX="32.0" layoutY="107.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_playlist_30px_2.png"/>
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Playlist">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="ALBUM" alignment="CENTER_LEFT" layoutX="32.0" layoutY="137.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img2" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_albums_24px_3.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Album">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="ARTIST" alignment="CENTER_LEFT" layoutX="32.0" layoutY="167.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img3" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_person_male_24px_1.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Artist">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="SONGS" alignment="CENTER_LEFT" layoutX="32.0" layoutY="197.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img4" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_music_26px_1.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Songs">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="STORE" alignment="CENTER_LEFT" layoutX="31.0" layoutY="299.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img5" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_apple_app_store_filled_50px_3.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Store">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="RADIO" alignment="CENTER_LEFT" layoutX="31.0" layoutY="329.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img6" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_radio_waves_30px_2.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Radio">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="FORYOU" alignment="CENTER_LEFT" layoutX="31.0" layoutY="359.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img7" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_hearts_24px_1.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="For You">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox id="BROWSER" alignment="CENTER_LEFT" layoutX="31.0" layoutY="389.0" onMouseEntered="#enterOnSidebarButton" onMouseExited="#excitedFromSidebarButton" prefHeight="30.0" prefWidth="100.0" styleClass="sidebar-btn">
+                    <children>
+                        <ImageView fx:id="img8" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_browser_window_24px_4.png" />
+                            </image>
+                        </ImageView>
+                        <Label styleClass="sidebar-btn-text" text="Browser">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <Label layoutX="31.0" layoutY="71.0" styleClass="sidebar-btn-text" text="LIBRARY">
+                    <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="32.0" layoutY="260.0" styleClass="sidebar-btn-text" text="PLAYLIST">
+                    <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="150.0" prefHeight="580.0" prefWidth="450.0" styleClass="childpane">
+            <children>
+                <Label layoutX="22.0" layoutY="63.0" text="Store" textFill="#ff1653">
+                    <font>
+                        <Font name="Calibri" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="20.0" layoutY="79.0" text="New Releases" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="28.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="22.0" layoutY="115.0" prefHeight="197.0" prefWidth="417.0" styleClass="imgpane">
+                    <children>
+                        <Label layoutX="14.0" layoutY="144.0" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="144.0" styleClass="sidebar-btn-text" text="BeyoundFear">
+                            <font>
+                                <Font name="Calibri Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="6.0" layoutY="162.0" text="Jonhy tear" textFill="#bfbebe">
+                            <font>
+                                <Font name="Calibri Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="367.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icons8_play_button_circled_30px_2.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </Pane>
+                <Circle fill="#f6f1ee" layoutX="51.0" layoutY="529.0" radius="30.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" />
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="37.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/4-alt.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="91.0" layoutY="514.0" text="Anne Marie" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="91.0" layoutY="529.0" text="I like to Do" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="202.0" layoutY="518.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_left_24px.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="241.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_pause_24px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="275.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/icons8_chevron_right_26px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="643.0" layoutY="112.0" prefHeight="76.0" prefWidth="358.0" styleClass="playbox">
+            <children>
+                <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/angle.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="84.0" layoutY="22.0" text="Work" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="38.0" text="Do it again" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="277.0" layoutY="31.0" text="20:40" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="322.0" layoutY="31.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/icons8_right_arrow_32px.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#323232" />
+            </effect>
+        </Pane>
+        <Pane layoutX="642.0" layoutY="196.0" prefHeight="76.0" prefWidth="358.0" styleClass="playbox">
+            <children>
+                <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/images.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="84.0" layoutY="22.0" text="Work" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="38.0" text="Do it again" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="277.0" layoutY="31.0" text="20:40" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="322.0" layoutY="31.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/icons8_right_arrow_32px.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#323232" />
+            </effect>
+        </Pane>
+        <Pane layoutX="641.0" layoutY="281.0" prefHeight="76.0" prefWidth="358.0" styleClass="playbox">
+            <children>
+                <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/background.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="84.0" layoutY="22.0" text="Work" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="38.0" text="Do it again" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="277.0" layoutY="31.0" text="20:40" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="322.0" layoutY="31.0" pickOnBounds="true" smooth="false">
+<!--                    <image>-->
+<!--                        <Image url="@../images/icons8_right_arrow_32px.png" />-->
+<!--                    </image>-->
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#323232" />
+            </effect>
+        </Pane>
+        <Pane layoutX="641.0" layoutY="365.0" prefHeight="76.0" prefWidth="358.0" styleClass="playbox">
+            <children>
+                <ImageView fitHeight="61.0" fitWidth="69.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/music_player_ui_design_2_2x.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="84.0" layoutY="22.0" text="Work" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="38.0" text="Do it again" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="277.0" layoutY="31.0" text="20:40" textFill="#fffdfd">
+                    <font>
+                        <Font name="Calibri" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="322.0" layoutY="31.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@../images/icons8_right_arrow_32px.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#323232" />
+            </effect>
+        </Pane>
+        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="981.0" layoutY="59.0" pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="@../images/icons8_play_button_circled_30px_3.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="955.0" layoutY="61.0" pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="@../images/icons8_shuffle_24px.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="965.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icons8_volume_up_26px.png" />
+            </image>
+        </ImageView>
+<!--        <JFXSlider layoutX="450.0" layoutY="524.0" prefHeight="14.0" prefWidth="462.0" styleClass="jfx-slider" />-->
+    </children>
+</AnchorPane>

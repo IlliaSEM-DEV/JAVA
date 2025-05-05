@@ -1,0 +1,40 @@
+.sidebar{
+    -fx-background-color: #25263A;
+}
+.sidebar-btn{
+    -fx-background-color:transparent;
+}
+.sidebar-btn-text{
+    -fx-text-fill:#fff;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #FF1653;
+}
+.childpane{
+    -fx-background-color:#25263A;
+    -fx-border-color:#5D606F;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+.imgpane{
+    -fx-border-radius:30px;
+    -fx-background-image:url(../images/background.jpg);
+   -fx-background-size:stretch;
+}
+.lastpane{
+    -fx-background-color:#25263A;
+    -fx-border-color:#5D606F;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+.playbox{
+  -fx-background-color: #25263A;
+}
+.playbox:hover{
+    -fx-border-color:#5D606F;
+    -fx-background-color:#5D606F;
+}
+.slider .track{
+    -fx-background-color: #fcfcfc;
+}
+.slider .thumb{
+    -fx-background-color: #fff;
+}
