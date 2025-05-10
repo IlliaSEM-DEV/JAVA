@@ -1,0 +1,1 @@
+jar cfm myapp.jar manifest.mf org/
